@@ -20,7 +20,6 @@
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/tipTip.css">
   <link rel="stylesheet" href="css/biscuits.css">
   
 
@@ -45,8 +44,13 @@
       <p> This is how to:</p>
       <ul>
           <li>Fork our <a href="https://github.com/fluug/127-Biscuits">project</a></li>
-          <li>Bake some code (make your contribution)</li>
-          <li>Offer some tasting (let us know)</li>
+          <li>
+            Bake some code (make your contribution) <img src="img/greenplus.png" alt="more" title="more" id="bake">
+            <p id="bakeMsg">
+              Message from the oven!
+            </p>
+          </li>
+          <li>Offer some tasting (let us know)  <img src="img/greenplus.png" alt="more" title="more" id="taste"></li>
       </ul>
     </div>
     
@@ -67,7 +71,15 @@
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
 
-
+<script>
+    $().ready(function*(){
+        $("#bake").onmouseover(function(){
+          $("#bakeMsg").show();
+        }).onmouseout(function(){
+          $("#bakeMsg").hide();
+        });
+    });
+</script>
   
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>
@@ -77,14 +89,6 @@
     });
   </script>
 
-<script src="js/tiptip/jquery.tipTip.minified.js"></script>
-  
-  <script>
-    $(function(){
-        $(".tiptip").tipTip();
-    });
-
-  </script>
 
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>

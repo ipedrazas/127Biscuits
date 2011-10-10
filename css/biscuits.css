@@ -8,7 +8,7 @@ header {
 	height: 250px;
 	width: 850px;
 	margin: 0 auto;
-	padding-top: 120px;
+	padding-top: 100px;
 }
 
 header h1{
@@ -31,7 +31,9 @@ header img{
 	font-size: 1.5em;
 }
 
-
+#main h2{
+	color: gray;
+}
 
 
 
@@ -66,4 +68,8 @@ footer li a{
 	font-size: 1.2em;
 	color: gray;
 	text-decoration: none;
+}
+
+#bakeMsg{
+	display: none;
 }
