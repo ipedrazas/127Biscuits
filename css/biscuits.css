@@ -5,23 +5,29 @@
 
 header {
 	
-	height: 130px;
-	background-color: #F2DE6D;
-	box-shadow: 0 8px 5px rgba(204,190,84,0.5);
-	width: 723px;
+	height: 250px;
+	width: 850px;
 	margin: 0 auto;
+	padding-top: 120px;
 }
 
-h1{	
+header h1{
+	float: left;	
 	padding-top: 35px;
 	text-align: center;
-	font-size: 4.0em;
-	color: #324B7A;
+	font-size: 5.0em;
+	color: #BAB9B8;
 	text-shadow: 2px 5px 5px rgba(50,75,122,0.5);
+	-webkit-text-stroke: 1.0px #000000;
+}
+
+header img{
+	float: left;
+
 }
 
 #main{	
-	margin-left: 350px;
+	margin-left: 300px;
 	font-size: 1.5em;
 }
 
