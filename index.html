@@ -1,1 +1,71 @@
-My Github page
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Authentication and Authorisation :: 127 Biscuits</title>
+  <meta name="description" content="127 Biscuits">
+  <meta name="author" content="ipedrazas">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/biscuits.css">
+  
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <h1>Authentication and Authorisation</h1>
+    </header>
+    <article>
+	    <div id="main" role="main">
+	      <h2>Database compromised? so what?</h2>
+	      <p>Since the Sony scandal (because it was a proper scandal) about stolen credentials and customer data, many people has hurried to double check what's their policy about password and data protection. Yes, we know, one thing is what the data protection laws say you must do in order to protect and blah, blah, blah...</p>
+	      <p>But how secure is your secure system? how much information would be gained if a malicious attack was launched against your servers? Here we have different scenarios:</p>
+
+	      <ul>
+	      	<li>Encrypted passwords using standard encryption libraries</li>
+	      	<li>Hashed passwords using standard hashing algorithms (MD5, SHA1...)</li>
+	      	<li>Hashed strings formed by passwords and salts using standard hashing algorithms (MD5, SHA1...)</li>
+	      </ul>
+	      
+	      <p>It's true that having your passwords hashed with a Salt will make attacks much harder, but bear in mind that the effort on breaking you will be proportional to the value of the information that can be taken away. So, my website about screwdrivers probably will have enough with a hashed password + salt, but the legal data that pharmaceutical companies have to provide to the pharmacovigilance organizations is slightly more sensible and valuable than having access to the latest state of art screwdriver.</p>
+
+	      <p>So, if you have one of this repositories with sensible data you should think twice about how do you store and protect your data.</p>
+
+	      <p>I've always said that you cannot lose what you don't have, or rephrasing it for this context: they cannot steal what you don't have. So, is it possible to implement a system where even when the whole database is compromised the security is guaranteed? yes, to some extent.</p>
+
+	      <p></p>
+	    </div>
+    </article>
+  </div> <!--! end of #container -->
+  <footer>     
+  </footer>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
